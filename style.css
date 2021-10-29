@@ -1,0 +1,168 @@
+/*Estilos comunes*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#1D202B;
+}
+
+.header{
+    color: #f7f2ebcc;
+    width: 100vw;
+    height: 20vw;
+    padding: 20px;
+    background-color:black;
+}
+
+.nav{
+    background-color: rgb(129, 113, 113);
+    color: rgba(247, 242, 235, 0.801);
+    border-radius: 5px;
+    margin: 0.3%;
+    padding: 0.3%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    } 
+
+#btn1{
+    margin-left: 40vw;
+}
+
+.container{
+display: grid;
+width: 100vw;
+max-width: 1000px;
+margin: 0.5rem;
+padding: 2rem;
+grid-gap: 2rem;
+grid-template-columns: 2fr 1fr;
+grid-template-rows: 1fr;
+  }
+
+.repositorio{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+
+.card-title{
+    color:rgba(247, 242, 235, 0.801);
+}
+
+.card-body{
+    align-content: center;
+}
+
+.card{
+    padding: 1rem;
+}
+
+    .boton{
+        background-color: green;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+        margin-top: 0;
+        margin-bottom: 4rem;
+        padding: 0.5rem;
+    }
+
+.footer{
+color: rgba(247, 242, 235, 0.801);
+width: 100vw;
+height: 20vh;
+padding: 20px;
+background-color:black;
+margin-top: 0;
+text-align: center;
+}
+
+h1{
+    color: #f7f2ebfd;
+    text-shadow: seashell;
+    font-weight: bolder;
+    text-align: center;
+    width: 95vw;
+    margin: 2rem;
+    display: inline-block;
+    animation: shakeY;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+h3{
+    text-align: center;
+    color: #f7f2ebcc;
+    margin: 1rem;
+}
+
+h4{text-align: center;
+color: #f7f2ebcc;
+margin: 1rem;
+}
+
+@media (max-width: 600px){
+    .repositorio{
+        flex-direction: column;
+        margin: auto;
+        padding: 2rem, 10vw;
+    }
+    h1{
+font-size: 2rem;
+    }
+    h3{
+        font-size: 0.75rem;
+        color: black;
+    }
+    header{
+        height: 20vw;
+    }
+}
+.container{
+    margin-top: 2rem, auto;
+}
+
+@media (max-width: 768px) {
+    .card{
+        margin-left: 50vw;
+        align-content: center;
+    }
+    .header{
+        height: 20vw;
+    }
+
+    .container{
+        margin-top: 2rem;
+    }
+    .repositorio{
+        margin: auto;
+        padding: 2rem, 10vw;
+    }
+    
+    h1{
+font-size: 1rem;
+    }
+    h3{
+        color: black;
+        font-size: 0.5rem;
+    }
+}
+
+
+@media (max-width:992px) {
+
+    .repositorio{
+        width: 80vw;
+    }
+}
